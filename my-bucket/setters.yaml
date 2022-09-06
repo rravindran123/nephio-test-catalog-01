@@ -18,6 +18,9 @@ metadata: # kpt-merge: /setters
   annotations:
     config.kubernetes.io/local-config: "true"
     internal.kpt.dev/upstream-identifier: '|ConfigMap|default|setters'
+  labels:
+    color: orange
+    fruit: apple
 data:
   name: bucket2
   #project-id: project-id

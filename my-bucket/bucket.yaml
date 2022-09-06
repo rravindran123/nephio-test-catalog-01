@@ -19,8 +19,11 @@ metadata: # kpt-merge: config-control/blueprints-project-bucket
   annotations:
     cnrm.cloud.google.com/force-destroy: "false"
     cnrm.cloud.google.com/project-id: blueprints-project # kpt-set: ${project-id}
-    internal.kpt.dev/upstream-identifier: 'storage.cnrm.cloud.google.com|StorageBucket|config-control|blueprints-project-bucket'
-    cnrm.cloud.google.com/blueprint: 'kpt-fn'
+    internal.kpt.dev/upstream-identifier: storage.cnrm.cloud.google.com|StorageBucket|config-control|blueprints-project-bucket
+    cnrm.cloud.google.com/blueprint: kpt-fn
+  labels:
+    color: orange
+    fruit: apple
 spec:
   location: us-central1
   storageClass: standard # kpt-set: ${storage-class}
