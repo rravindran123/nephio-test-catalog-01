@@ -25,3 +25,7 @@ pipeline:
   mutators:
   - image: gcr.io/kpt-fn/apply-setters:v0.1
     configPath: setters.yaml
+  - image: gcr.io/kpt-fn/set-labels:v0.1.5
+    configMap:
+      color: orange
+      fruit: apple
